@@ -38,15 +38,15 @@
 import PreviewDialog from "./components/preview-dialog";
 import DataDialog from "./components/data-dialog";
 import CodeDialog from "./components/code-dialog";
-import BatchDialog from "./components/batch-dialog";
+// import BatchDialog from "./components/batch-dialog";
 
 export default {
   inject: ["frender"],
   components: {
     PreviewDialog,
     DataDialog,
-    CodeDialog,
-    BatchDialog
+    CodeDialog
+    // BatchDialog
   },
   data() {
     // 切换 visible
@@ -89,14 +89,14 @@ export default {
           // 增加 click
           click: createToggleVisibleFn("code")
         },
-        batch: {
-          icon: "el-icon-plus",
-          label: "批量添加",
-          // 增加 visible: false
-          visible: false,
-          // 增加 click
-          click: createToggleVisibleFn("batch")
-        },
+        // batch: {
+        //   icon: "el-icon-plus",
+        //   label: "批量添加",
+        //   // 增加 visible: false
+        //   visible: false,
+        //   // 增加 click
+        //   click: createToggleVisibleFn("batch")
+        // },
         clear: {
           icon: "el-icon-delete",
           label: "清空表单",

@@ -2,9 +2,9 @@
   <!-- 1.设计阶段 -->
   <multipane v-if="!pure" :style="{ height }" class="f-render">
     <!-- 左侧 -->
-    <slot name="left" :comps="sortedComps" :frender="this">
+    <!-- <slot name="left" :comps="sortedComps" :frender="this">
       <f-render-left />
-    </slot>
+    </slot> -->
     <multipane-resizer></multipane-resizer>
     <!-- 中间 -->
     <slot name="main" :frender="this">
@@ -43,7 +43,7 @@ import "./global-components";
 
 // 组件
 import FormSkeleton from "./form-skeleton";
-import FRenderLeft from "./components/left/index";
+// import FRenderLeft from "./components/left/index";
 import FRenderMain from "./components/main/index";
 import FRenderRight from "./components/right/index";
 import { Multipane, MultipaneResizer } from "vue-multipane";
@@ -69,7 +69,7 @@ export default {
     FormSkeleton,
     Multipane,
     MultipaneResizer,
-    FRenderLeft,
+    // FRenderLeft,
     FRenderRight,
     FRenderMain
   },
